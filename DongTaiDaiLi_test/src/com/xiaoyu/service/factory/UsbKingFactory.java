@@ -1,0 +1,13 @@
+package com.xiaoyu.service.factory;
+
+import com.xiaoyu.service.UsbSell;
+
+//目标类  每个U盘85 元
+public class UsbKingFactory implements UsbSell {
+    @Override
+    public float sell(int amount) {
+        //目标方法
+        System.out.println("目标类中，执行sell目标方法");
+        return 85.0f * amount;
+    }
+}
